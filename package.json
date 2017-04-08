@@ -1,0 +1,19 @@
+{
+  "name": "npm-hands-on",
+  "description": "Baic npm modules",
+  "version": "2.5.11",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "repository": "git@github.com:devravitiwari/sessions-npm.git",
+  "main": "app.js",
+  "bin": {
+    "express": "./bin/express"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "make test",
+    "prepublish": "npm prune"
+  }
+}
