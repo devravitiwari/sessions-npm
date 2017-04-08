@@ -1,4 +1,7 @@
 # gitignore : https://git-scm.com/docs/gitignore
+node_modules
+tmp/*
+.tmp
 
 # common ide dirs
 .vscode
