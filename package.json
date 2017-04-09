@@ -10,12 +10,9 @@
     "type": "git",
     "url": "https://github.com:devravitiwari/sessions-npm.git"
   }, 
-  "main": "src/app.js",
-  "bin": {
-    "express": "./bin/express"
-  },
+  "main": "./src/app.js",
   "scripts": {
     "prestart": "npm install",
-    "start": "node app.js"
+    "start": "node ./src/app.js"
   }
 }
