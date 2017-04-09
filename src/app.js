@@ -30,6 +30,14 @@ app.get('/q', function(req, res) {
   qDemo.run();
 });
 
+var mailerDemo = require('./05_nodemailer_demo');
+app.get('/nodemailer', function(req, res) {
+  res.send("Head to the Node console to see the demo");
+  mailerDemo.run();
+});
+app.use(mailerDemo.url, mailerDemo.sendMail);
+
+
 var server = app.listen(54321, "localhost", function () {
   var host = server.address().address;
   var port = server.address().port;
