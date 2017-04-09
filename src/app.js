@@ -1,9 +1,23 @@
-console.log("\n");
-console.log("Introduction to npm");
-console.log("===================");
+var path = require('path');
+var express = require('express');
+var app = express();
 
+app.get('/', function (req, res) {
+  res.sendFile(path.resolve(__dirname + '/index.html'));
+});
 
-var app = require('./01_express_demo');
+app.get('/express', function(req, res) {
+  res.send("You just used the express package for creating a web server! Happy learning");
+  var expressDemo = require('./01_express_demo');
+  expressDemo.run();
+});
+
+app.get('/lodash', function(req, res) {
+  res.send("Head to the Node console to see the demo");
+  var lodashDemo = require('./02_lodash_demo');
+  lodashDemo.run();
+});
+
 
 var server = app.listen(54321, "localhost", function () {
   var host = server.address().address;
@@ -11,4 +25,8 @@ var server = app.listen(54321, "localhost", function () {
   console.log("App listening on http://%s:%s", host, port);
   console.log("Press Ctrl + C to stop");
 });
+
+console.log("Introduction to npm");
+console.log("===================");
+
 

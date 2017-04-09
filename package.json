@@ -3,13 +3,14 @@
   "description": "Baic npm modules",
   "version": "0.0.1",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com:devravitiwari/sessions-npm.git"
-  }, 
+  },
   "main": "./src/app.js",
   "scripts": {
     "prestart": "npm install",
