@@ -348,5 +348,5 @@ With this, we cover the basics of `npm` and are now ready for the hands-on.
 
 ## Publishing Own Packages
 
-WIP
+- This will be demoed in class
 
