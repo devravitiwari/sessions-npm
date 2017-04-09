@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com:devravitiwari/sessions-npm.git"
   }, 
-  "main": "app.js",
+  "main": "src/app.js",
   "bin": {
     "express": "./bin/express"
   },
