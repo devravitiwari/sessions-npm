@@ -314,7 +314,39 @@ With this, we cover the basics of `npm` and are now ready for the hands-on.
 
 ## Hands On With npm
 
-WIP
+- Now that we have learned enough of npm to get go, we will start with the hands on.
+
+- Hands on with npm will give you a better understanding of this session material.
+
+- We will cover following packages:  
+    - Express
+    - Lodash
+    - Async
+    - Q
+    - Nodemailer
+    - Request
+  
+- Follow along these steps to start:
+    - Clone the session material repository - ignore if already done.
+        ```shell
+        $: cd ~/work/sessions/
+
+        $: git clone https://github.com/devravitiwari/sessions-npm.git hands-on
+        ```
+    - Each course has a corresponding branch. Begin with checking out the `express` branch.
+        ```shell
+        $: cd ~/work/sessions/hands-on
+
+        $: git checkout express 
+
+        $: npm install
+
+        $: npm start 
+        ```
+
+    - Follow the same pattern as above for other modules - `lodash`, `async` etc.
+
+
 
 ## Publishing Own Packages
 
