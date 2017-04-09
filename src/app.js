@@ -37,6 +37,10 @@ app.get('/nodemailer', function(req, res) {
 });
 app.use(mailerDemo.url, mailerDemo.sendMail);
 
+app.get('/request', function(req, res) {
+  var reqDemo = require('./06_request_demo');
+  reqDemo.run(req, res);
+});
 
 var server = app.listen(54321, "localhost", function () {
   var host = server.address().address;
