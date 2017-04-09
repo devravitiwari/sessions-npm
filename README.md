@@ -339,8 +339,6 @@ With this, we cover the basics of `npm` and are now ready for the hands-on.
 
         $: git checkout express 
 
-        $: npm install
-
         $: npm start 
         ```
 
