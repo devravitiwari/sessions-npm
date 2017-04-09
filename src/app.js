@@ -24,6 +24,12 @@ app.get('/async', function(req, res) {
   asyncDemo.run();
 });
 
+app.get('/q', function(req, res) {
+  res.send("Head to the Node console to see the demo");
+  var qDemo = require('./04_q_demo');
+  qDemo.run();
+});
+
 var server = app.listen(54321, "localhost", function () {
   var host = server.address().address;
   var port = server.address().port;
