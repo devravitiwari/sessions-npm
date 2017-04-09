@@ -3,6 +3,7 @@
   "description": "Baic npm modules",
   "version": "0.0.1",
   "dependencies": {
+    "async": "^2.3.0",
     "express": "^4.15.2",
     "lodash": "^4.17.4"
   },

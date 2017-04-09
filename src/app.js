@@ -18,6 +18,11 @@ app.get('/lodash', function(req, res) {
   lodashDemo.run();
 });
 
+app.get('/async', function(req, res) {
+  res.send("Head to the Node console to see the demo");
+  var asyncDemo = require('./03_async_demo');
+  asyncDemo.run();
+});
 
 var server = app.listen(54321, "localhost", function () {
   var host = server.address().address;
